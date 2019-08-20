@@ -4,20 +4,16 @@ const COLLAPSE = 'workbench.files.action.collapseExplorerFolders';
 const REVEAL = 'revealInExplorer';
 
 function activate(context) {
-  const subscription = window.onDidChangeVisibleTextEditors(handleChange);
+  const subscription = window.onDidChangeActiveTextEditor(showOnlyCurrentFile);
   context.subscriptions.push(subscription);
   showOnlyCurrentFile();
 }
 
-function handleChange() {
-  showOnlyCurrentFile();
-}
-
-function showOnlyCurrentFile(editors) {
-  if (!editors || !editors.length) return;
-  commands.executeCommand(COLLAPSE);
-  commands.executeCommand(REVEAL);
-  window.showTextDocument(editors[0].document);
+async function showOnlyCurrentFile() {
+  await commands.executeCommand(COLLAPSE);
+  await commands.executeCommand(REVEAL);
+  if (!window.activeTextEditor) return;
+  window.showTextDocument(window.activeTextEditor.document);
 }
 
 function deactivate() {}
