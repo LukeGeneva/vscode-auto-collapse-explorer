@@ -2,7 +2,7 @@
   "name": "auto-collapse-explorer",
   "displayName": "Auto-Collapse Explorer",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.37.0"
   },
