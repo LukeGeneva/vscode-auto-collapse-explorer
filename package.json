@@ -22,6 +22,7 @@
     ]
   },
   "scripts": {
+    "deploy": "vsce publish",
     "test": "node ./test/runTest.js"
   },
   "devDependencies": {
@@ -33,6 +34,7 @@
     "glob": "^7.1.4",
     "mocha": "^6.1.4",
     "typescript": "^3.3.1",
+    "vsce": "^1.85.0",
     "vscode-test": "^1.0.2"
   }
 }
