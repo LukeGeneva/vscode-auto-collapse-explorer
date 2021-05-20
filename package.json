@@ -2,7 +2,7 @@
   "name": "auto-collapse-explorer",
   "displayName": "Auto-Collapse Explorer",
   "description": "",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.37.0"
   },
@@ -20,6 +20,10 @@
         "title": "Hello World"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LukeGeneva/vscode-auto-collapse-explorer"
   },
   "scripts": {
     "deploy": "vsce publish",
