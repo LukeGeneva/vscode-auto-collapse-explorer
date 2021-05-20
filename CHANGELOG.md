@@ -19,3 +19,10 @@ to structure this file.
 - Fixed bug causing split views, such as source control diffs, to be closed.
 - Fixed bug causing non-file editors to be closed.
 - Fixed misleading README.md.
+
+## [1.0.2] - 2021-05-20
+
+### Security
+
+- Bumped `lodash`.
+- Bumped `vsce`.
