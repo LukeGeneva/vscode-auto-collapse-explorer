@@ -1,14 +1,13 @@
-const path = require('path');
-const Mocha = require('mocha');
-const glob = require('glob');
+import * as path from 'path';
+import * as Mocha from 'mocha';
+import * as glob from 'glob';
 
-function run() {
+export function run(): Promise<void> {
 	// Create the mocha test
 	const mocha = new Mocha({
-		ui: 'tdd'
+		ui: 'tdd',
+		color: true
 	});
-	// Use any mocha API
-	mocha.useColors(true);
 
 	const testsRoot = path.resolve(__dirname, '..');
 
@@ -31,12 +30,9 @@ function run() {
 					}
 				});
 			} catch (err) {
+				console.error(err);
 				e(err);
 			}
 		});
 	});
 }
-
-module.exports = {
-	run
-};

@@ -26,3 +26,13 @@ to structure this file.
 
 - Bumped `lodash`.
 - Bumped `vsce`.
+
+## [1.0.3] - 2022-07-08
+
+### Security
+
+- Resolved issues raised by `npm audit`.
+
+### Changed
+
+- Migrated project to TypeScript.
