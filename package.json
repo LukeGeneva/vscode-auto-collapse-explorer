@@ -3,6 +3,7 @@
   "displayName": "auto-collapse-explorer",
   "description": "Auto-collapse explorer directories that are not currently in view.",
   "version": "1.0.3",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.68.1"
   },
