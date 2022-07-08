@@ -1,6 +1,6 @@
 {
   "name": "auto-collapse-explorer",
-  "displayName": "auto-collapse-explorer",
+  "displayName": "Auto-Collapse Explorer",
   "description": "Auto-collapse explorer directories that are not currently in view.",
   "version": "1.0.3",
   "license": "MIT",
