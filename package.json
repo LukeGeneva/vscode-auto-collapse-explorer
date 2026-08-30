@@ -2,7 +2,7 @@
   "name": "auto-collapse-explorer",
   "displayName": "Auto-Collapse Explorer",
   "description": "Auto-collapse explorer directories that are not currently in view.",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "license": "MIT",
   "publisher": "lukegeneva",
   "engines": {
@@ -15,7 +15,17 @@
     "*"
   ],
   "main": "./out/extension.js",
-  "contributes": {},
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "autoCollapseExplorer.sentinel",
+          "name": "Auto-Collapse Explorer",
+          "visibility": "visible"
+        }
+      ]
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/LukeGeneva/vscode-auto-collapse-explorer.git"
